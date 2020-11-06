@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="styles/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/aa019ad450.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--basic bg-primary-dark">
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <div class="usa-logo" id="basic-logo">
+            <img
+              src="assets/images/CBP_HORIZONTAL_WHITE_TEXT.png"
+              alt="CBP Logo"
+              style="max-width: 9em"
+            />
+          </div>
+
+          <!-- add mobile icons here -->
+          <button class="usa-menu-btn">Menu</button>
+        </div>
+
+        <nav aria-label="Primary navigation" class="usa-nav">
+          <button class="usa-nav__close">
+            <img
+              src="/assets/images/close-primary.svg"
+              role="img"
+              alt="close"
+            />
+          </button>
+          <ul class="usa-nav__primary usa-accordion">
+            <!-- flex display to align icon to spaced text -->
+            <li class="usa-nav__primary-item" style="display: flex">
+              <a class="usa-nav__link" href="javascript:void(0)">
+                <!-- 
+                    ////
+                    @TODO: Temporary Icon, replace with real icon later 
+                    ////
+                  -->
+                <i
+                  class="fas fa-circle text-primary-light"
+                  style="font-size: 30px"
+                ></i>
+                <div class="cbp-nav__link">
+                  <span class="nav-link__text margin-bottom-2px"
+                    >Application</span
+                  >
+                  <span class="nav-link__text">Directory</span>
+                </div>
+              </a>
+            </li>
+            <li class="usa-nav__primary-item" style="display: flex">
+              <a class="usa-nav__link" href="javascript:void(0)">
+                <!-- 
+                    ////
+                    @TODO: Temporary Icon, replace with real icon later 
+                    ////
+                  -->
+                <i
+                  class="fas fa-circle text-primary-light"
+                  style="font-size: 30px"
+                ></i>
+                <div class="cbp-nav__link">
+                  <span class="nav-link__text margin-bottom-2px">Give</span>
+                  <span class="nav-link__text">Feedback</span>
+                </div>
+              </a>
+            </li>
+            <li class="usa-nav__primary-item" style="display: flex">
+              <a class="usa-nav__link" href="javascript:void(0)">
+                <!-- 
+                    ////
+                    @TODO: Temporary Icon, replace with real icon later 
+                    ////
+                  -->
+                <i
+                  class="fas fa-circle text-primary-light"
+                  style="font-size: 30px"
+                ></i>
+                <div class="cbp-nav__link">
+                  <span class="nav-link__text margin-bottom-2px">User</span>
+                  <span class="nav-link__text">Name</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="bg-base-lightest padding-2">
+      <div class="usa-nav-container">
+        <ul>
+          <li class="usa-nav__secondary-item">
+            <a href="#"><span>Application</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/uswds.min.js"></script>
+  </body>
+</html>
