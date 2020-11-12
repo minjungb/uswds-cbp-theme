@@ -10,102 +10,115 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-
     <div class="usa-overlay"></div>
-    <header class="usa-header usa-header--basic bg-primary-dark">
-      <div class="usa-nav-container">
+    <header class="usa-header usa-header--extended">
+      <div class="bg-primary-dark">
         <div class="usa-navbar">
-          <div class="usa-logo" id="basic-logo">
-            <img
-              src="assets/images/CBP_HORIZONTAL_WHITE_TEXT.png"
-              alt="CBP Logo"
-              style="max-width: 9em"
-            />
+          <div class="usa-logo" id="extended-logo">
+            <em class="usa-logo__text"
+              ><a href="/" title="Home" aria-label="Home"
+                ><img
+                  src="assets/images/cbp-logo-white.svg"
+                  style="max-width: 6em"
+                  alt="CBP Logo" /></a
+            ></em>
           </div>
-
-          <!-- add mobile icons here -->
           <button class="usa-menu-btn">Menu</button>
         </div>
-
-        <nav aria-label="Primary navigation" class="usa-nav">
+      </div>
+      <nav aria-label="Primary navigation" class="usa-nav bg-base-lightest">
+        <div class="usa-nav__inner">
           <button class="usa-nav__close">
-            <img
-              src="/assets/images/close-primary.svg"
-              role="img"
-              alt="close"
-            />
+            <img src="/assets/images/close.svg" role="img" alt="close" />
           </button>
-          <ul class="usa-nav__primary usa-accordion">
-            <!-- flex display to align icon to spaced text -->
-            <li class="usa-nav__primary-item" style="display: flex">
-              <a class="usa-nav__link" href="javascript:void(0)">
-                <!-- 
-                    ////
-                    @TODO: Temporary Icon, replace with real icon later 
-                    ////
-                  -->
+          <div class="display-flex">
+            <span
+              class="flex-auto font-ui-md text-medium"
+              style="margin: auto 1em auto 0"
+              >Application Name</span
+            >
+            <ul class="usa-nav__primary usa-accordion flex-fill">
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 1</span></a
+                >
+              </li>
+              <li class="usa-nav__primary-item">
+                <button
+                  class="usa-accordion__button usa-nav__link"
+                  aria-expanded="false"
+                  aria-controls="extended-nav-section-two"
+                >
+                  <span>Child 2</span>
+                </button>
+                <ul id="extended-nav-section-two" class="usa-nav__submenu">
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 3</span></a
+                >
+              </li>
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 4</span></a
+                >
+              </li>
+            </ul>
+
+            <button
+              class="usa-button usa-button--outline height-4"
+              style="margin: auto"
+            >
+              <div class="display-flex">
                 <i
-                  class="fas fa-circle text-primary-light"
-                  style="font-size: 30px"
-                ></i>
-                <div class="cbp-nav__link">
-                  <span class="nav-link__text margin-bottom-2px"
-                    >Application</span
-                  >
-                  <span class="nav-link__text">Directory</span>
-                </div>
-              </a>
-            </li>
-            <li class="usa-nav__primary-item" style="display: flex">
-              <a class="usa-nav__link" href="javascript:void(0)">
-                <!-- 
-                    ////
-                    @TODO: Temporary Icon, replace with real icon later 
-                    ////
-                  -->
-                <i
-                  class="fas fa-circle text-primary-light"
-                  style="font-size: 30px"
-                ></i>
-                <div class="cbp-nav__link">
-                  <span class="nav-link__text margin-bottom-2px">Give</span>
-                  <span class="nav-link__text">Feedback</span>
-                </div>
-              </a>
-            </li>
-            <li class="usa-nav__primary-item" style="display: flex">
-              <a class="usa-nav__link" href="javascript:void(0)">
-                <!-- 
-                    ////
-                    @TODO: Temporary Icon, replace with real icon later 
-                    ////
-                  -->
-                <i
-                  class="fas fa-circle text-primary-light"
-                  style="font-size: 30px"
-                ></i>
-                <div class="cbp-nav__link">
-                  <span class="nav-link__text margin-bottom-2px">User</span>
-                  <span class="nav-link__text">Name</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                  class="fas fa-filter font-sans-3xs margin-right-1"
+                  style="display: inline"
+                ></i
+                ><span class="font-sans-3xs text-ls-2">FILTER</span>
+              </div>
+            </button>
+
+            <form
+              class="usa-search usa-search--small flex-align-self-center"
+              role="search"
+            >
+              <label class="usa-sr-only" for="extended-search-field-small"
+                >Search small</label
+              ><input
+                class="usa-input"
+                id="extended-search-field-small"
+                type="search"
+                name="search"
+              /><button class="usa-button" type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+          <div class="usa-nav__secondary">
+            <ul class="usa-nav__secondary-links">
+              <li class="usa-nav__secondary-item">
+                <a href="">Secondary link</a>
+              </li>
+              <li class="usa-nav__secondary-item">
+                <a href="">Another secondary link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <div class="bg-base-lightest padding-2">
-      <div class="usa-nav-container">
-        <ul>
-          <li class="usa-nav__secondary-item">
-            <a href="#"><span>Application</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <script src="./js/uswds.min.js"></script>
   </body>
 </html>
