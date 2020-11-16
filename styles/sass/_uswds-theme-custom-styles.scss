@@ -20,13 +20,23 @@ i.e.
 ----------------------------------------
 */
 
-// @media only screen and (min-width: 1022px) {
-//   .nav-link__text {
-//     color: white;
-//     display: block;
-//   }
+@media only screen and (min-width: 1022px) {
+  .cbp-header__link {
+    display: block;
+    color: white;
+    margin-bottom: 2px;
+    + span {
+      color: white;
+    }
+  }
+}
 
-//   .cbp-nav__link {
-//     display: inline-block;
-//   }
-// }
+@media only screen and (max-width: 64em) {
+  //hide subnav in mobile drawer
+  .cbp-subnav > .usa-nav__primary,
+  .cbp-subnav > button,
+  .cbp-subnav > .usa-search,
+  .cbp-global-header {
+    display: none;
+  }
+}

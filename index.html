@@ -15,28 +15,84 @@
     <div class="usa-overlay"></div>
     <header class="usa-header usa-header--extended">
       <div class="bg-primary-dark">
-        <div class="usa-navbar">
-          <div class="usa-logo" id="extended-logo">
-            <em class="usa-logo__text"
-              ><a href="/" title="Home" aria-label="Home"
-                ><img
-                  src="assets/images/cbp-logo-white.svg"
-                  style="max-width: 6em"
-                  alt="CBP Logo" /></a
-            ></em>
+        <div class="cbp-global-header usa-navbar">
+          <div class="grid-row">
+            <div class="usa-logo grid-col" id="extended-logo">
+              <em class="usa-logo__text"
+                ><a href="/" title="Home" aria-label="Home"
+                  ><img
+                    src="assets/images/cbp-logo-white.svg"
+                    style="max-width: 6em"
+                    alt="CBP Logo" /></a
+              ></em>
+            </div>
+
+            <ul
+              class="cbp-global-header usa-nav__primary usa-accordion grid-col flex-align-center flex-justify-end"
+            >
+              <!-- Custom class for global header links -->
+              <li class="usa-nav__primary-item">
+                <a href="javascript:void(0)" class="usa-nav__link">
+                  <div class="display-flex flex-align-center">
+                    <i
+                      class="fab fa-app-store"
+                      style="color: white; font-size: 32px"
+                    ></i>
+                    <div class="margin-left-1 font-sans-3xs">
+                      <span class="cbp-header__link">Application</span
+                      ><span>Directory</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="usa-nav__primary-item">
+                <a href="javascript:void(0)" class="usa-nav__link"
+                  ><div class="display-flex flex-align-center">
+                    <i
+                      class="fas fa-comment"
+                      style="color: white; font-size: 32px"
+                    ></i>
+                    <div class="margin-left-1 font-sans-3xs">
+                      <span class="cbp-header__link">Give</span
+                      ><span>Feedback</span>
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li class="usa-nav__primary-item">
+                <a href="javascript:void(0)" class="usa-nav__link"
+                  ><div class="display-flex flex-align-center">
+                    <i
+                      class="fas fa-user"
+                      style="color: white; font-size: 32px"
+                    ></i>
+                    <div class="margin-left-1 font-sans-3xs">
+                      <span class="cbp-header__link">User</span
+                      ><span>Name</span>
+                    </div>
+                  </div></a
+                >
+              </li>
+            </ul>
           </div>
-          <button class="usa-menu-btn">Menu</button>
         </div>
+
+        <button class="usa-menu-btn">Menu</button>
       </div>
+
       <nav aria-label="Primary navigation" class="usa-nav bg-base-lightest">
         <div class="usa-nav__inner">
           <button class="usa-nav__close">
-            <img src="/assets/images/close.svg" role="img" alt="close" />
-          </button>
-          <div class="display-flex">
+            <img
+              src="/assets/images/close.svg"
+              role="img"
+              alt="close"
+            /></button
+          ><!-- custom class for hiding subnav content in mobile drawer -->
+          <div class="cbp-subnav display-flex">
             <span
               class="flex-auto font-ui-md text-medium"
-              style="margin: auto 1em auto 0"
+              style="margin: auto 2em auto 0"
               >Application Name</span
             >
             <ul class="usa-nav__primary usa-accordion flex-fill">
@@ -76,7 +132,6 @@
                 >
               </li>
             </ul>
-
             <button
               class="usa-button usa-button--outline height-4"
               style="margin: auto"
@@ -89,7 +144,6 @@
                 ><span class="font-sans-3xs text-ls-2">FILTER</span>
               </div>
             </button>
-
             <form
               class="usa-search usa-search--small flex-align-self-center"
               role="search"
@@ -106,19 +160,27 @@
               </button>
             </form>
           </div>
-          <div class="usa-nav__secondary">
-            <ul class="usa-nav__secondary-links">
-              <li class="usa-nav__secondary-item">
-                <a href="">Secondary link</a>
-              </li>
-              <li class="usa-nav__secondary-item">
-                <a href="">Another secondary link</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     </header>
+    <main id="main-content">
+      <div class="usa-section">
+        <div class="grid-container">
+          <h1>Page Title</h1>
+          <div class="font-sans-3xs">
+            <span class="margin-right-2"
+              ><i class="fas fa-circle" style="color: #009ec1"></i
+              ><em class="margin-left-1">Recently Updated</em></span
+            ><span
+              ><i class="fas fa-square" style="color: #4d8055"></i
+              ><em class="margin-left-1">Recently Added</em></span
+            >
+          </div>
+
+          <hr style="border-color: #005ea2" class="margin-top-205" />
+        </div>
+      </div>
+    </main>
     <script src="./js/uswds.min.js"></script>
   </body>
 </html>
