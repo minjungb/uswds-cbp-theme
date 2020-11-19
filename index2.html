@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Card Archetype Layout</title>
     <link rel="stylesheet" href="styles/css/styles.css" />
     <script
       src="https://kit.fontawesome.com/aa019ad450.js"
@@ -15,23 +15,47 @@
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
     <header class="usa-header usa-header--extended">
-      <div class="bg-primary-dark">
+      <div style="background-color: #003366">
         <div class="usa-navbar">
           <div class="usa-logo" id="extended-logo">
             <img
               src="assets/images/cbp-logo-white.svg"
               alt="CBP Logo"
               style="max-width: 6em"
+              class="cbp-logo__desktop"
             />
+            <div class="cbp-logo__mobile display-flex">
+              <img
+                src="assets/images/cbp-logo-circle.svg"
+                alt="CBP Logo"
+                class="cbp-logo__mobile"
+              />
+              <span
+                class="text-white text-medium font-sans-lg"
+                style="margin: auto"
+                >CBP</span
+              >
+            </div>
           </div>
-
-          <button class="usa-menu-btn">Menu</button>
+          <div class="margin-right-2 grid-row">
+            <button class="usa-menu-btn cbp-universal-header--icons">
+              <i class="fas fa-user margin-right-05 font-ui-md"></i>
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="cbp-app-header__mobile display-flex">
+        <span class="font-ui-lg text-medium" style="margin: auto 0 auto 1em"
+          >Card Archetype</span
+        >
+        <button class="usa-menu-btn cbp-menu-btn">
+          <i class="fas fa-bars text-primary"></i>
+        </button>
       </div>
       <nav aria-label="Primary navigation" class="usa-nav">
         <div class="usa-nav__inner">
           <button class="usa-nav__close">
-            <img src="/assets/images/close.svg" role="img" alt="close" />
+            <img src="/assets/images/close-white.svg" role="img" alt="close" />
           </button>
           <ul class="usa-nav__primary usa-accordion">
             <li
@@ -97,18 +121,35 @@
             style="width: 55em"
           >
             <ul class="usa-nav__primary usa-accordion">
-              <li class="usa-nav__primary-item">
+              <li class="usa-nav__primary-item cbp-universal-header--button">
                 <button
-                  class="usa-button usa-nav__link"
+                  class="usa-accordion__button usa-nav__link cbp-universal-header--button"
                   aria-expanded="false"
                   aria-controls="extended-nav-section-one"
                 >
-                  <span
+                  <span class="text-white"
                     ><i class="fas fa-th-large margin-right-05"></i> Card
                     Archetype</span
                   >
                 </button>
                 <ul id="extended-nav-section-one" class="usa-nav__submenu">
+                  <li class="usa-nav__submenu-item">
+                    <span class="text-white" style="opacity: 0.8"
+                      ><hr />
+                      <em>Recently Viewed Applications</em>
+                      <hr
+                    /></span>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="usa-link--external"
+                      >Most Recent Application</a
+                    >
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="usa-link--external"
+                      >Most Recent Application</a
+                    >
+                  </li>
                   <li class="usa-nav__submenu-item">
                     <a href="#" class="usa-link--external"
                       >Most Recent Application</a
@@ -130,18 +171,43 @@
             <ul class="usa-nav__primary usa-accordion flex-justify-end">
               <li class="usa-nav__primary-item">
                 <a href="#"
-                  ><span
+                  ><span class="text-white"
                     ><i class="fas fa-comment margin-right-05"></i
                     >Feedback</span
                   ></a
                 >
               </li>
-              <li class="usa-nav__primary-item">
-                <a href="#"
-                  ><span>
-                    <i class="fas fa-user margin-right-05"></i>User Name</span
-                  ></a
+
+              <li class="usa-nav__primary-item cbp-universal-header--button">
+                <button
+                  class="usa-accordion__button usa-nav__link cbp-universal-header--button"
+                  aria-expanded="false"
+                  aria-controls="extended-nav-section-three"
                 >
+                  <span class="text-white"
+                    ><i class="fas fa-user margin-right-05"></i>User Name</span
+                  >
+                </button>
+                <ul id="extended-nav-section-three" class="usa-nav__submenu">
+                  <li class="usa-nav__submenu-item">
+                    <a href="#"
+                      ><i class="fas fa-bell margin-right-05"></i>
+                      Notifications</a
+                    >
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#"
+                      ><i class="fas fa-external-link-alt margin-right-05"></i
+                      >User Profile</a
+                    >
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#"
+                      ><i class="fas fa-sign-out-alt margin-right-05"></i
+                      ><span class="text-heavy">Logout</span></a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -172,7 +238,7 @@
             ><span>FILTER</span>
           </button>
         </div>
-        <hr style="border-color: #005ea2" class="margin-top-205" />
+        <hr style="border: 3px solid #005ea2" class="margin-top-205" />
       </div>
 
       <!-- <div class="grid-row cards">
@@ -206,75 +272,6 @@
       </div> -->
     </main>
 
-    <!--
-    <header class="usa-header usa-header--basic height-7">
-      <div class="usa-logo" id="basic-logo">
-        <img src="assets/images/cbp-logo-white.svg" style="max-width: 8em" />
-      </div>
-    </header>
-    <div class="bg-base-lightest">
-      <div class="usa-nav-container">
-        <div class="usa-navbar">
-          <div class="usa-logo" id="basic-logo"><span>LOGO</span></div>
-          <button class="usa-menu-btn">
-            <i class="fas fa-bars margin-right-1"></i>Menu
-          </button>
-        </div>
-        <nav aria-label="Primary navigation" class="usa-nav">
-          <button class="usa-nav__close">
-            <img src="assets/images/close.svg" role="img" alt="close" />
-          </button>
-          <ul class="usa-nav__primary usa-accordion">
-            <li class="usa-nav__primary-item">
-              <button
-                class="usa-accordion__button usa-nav__link usa-current"
-                aria-expanded="false"
-                aria-controls="basic-nav-section-one"
-              >
-                <span>Current section</span>
-              </button>
-              <ul id="basic-nav-section-one" class="usa-nav__submenu">
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="usa-nav__primary-item">
-              <button
-                class="usa-accordion__button usa-nav__link"
-                aria-expanded="false"
-                aria-controls="basic-nav-section-two"
-              >
-                <span>Section</span>
-              </button>
-              <ul id="basic-nav-section-two" class="usa-nav__submenu">
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-                <li class="usa-nav__submenu-item">
-                  <a href="#" class="">Navigation link</a>
-                </li>
-              </ul>
-            </li>
-            <li class="usa-nav__primary-item">
-              <a class="usa-nav__link" href="javascript:void(0)"
-                ><span>Simple link</span></a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    -->
     <script src="js/uswds.min.js"></script>
     <script src="./js/cards.js"></script>
   </body>
