@@ -21,45 +21,78 @@ i.e.
 */
 
 @media only screen and (min-width: 1022px) {
-  .cbp-header__link {
-    display: block;
-    color: white;
-    margin-bottom: 2px;
+  // .cbp-header__link {
+  //   display: block;
+  //   color: white;
+  //   margin-bottom: 2px;
 
-    + span {
-      color: white;
-    }
+  //   + span {
+  //     color: white;
+  //   }
+  // }
+
+  // Display flex on desktop view to align links.
+  // (using flex will break mobile nav menu)
+  .cbp-universal-header__links {
+    display: flex;
+  }
+
+  //Changes background color of the drop down menu under Card Archetypes in the Global header.
+  //@TODO: Change this to the CBP blue color, along with the Global header.
+  #extended-nav-section-one {
+    background-color: #1a4480;
+  }
+
+  .usa-nav__primary button[aria-expanded='true'] {
+    background-color: #1a4480;
   }
 }
 
 @media only screen and (max-width: 64em) {
   //hide subnav in mobile drawer
-  .cbp-subnav > .usa-nav__primary,
-  .cbp-subnav > button,
-  .cbp-subnav > .usa-search,
-  .cbp-global-header {
-    display: none;
-  }
+  // .cbp-subnav > .usa-nav__primary,
+  // .cbp-subnav > button,
+  // .cbp-subnav > .usa-search,
+  // .cbp-global-header {
+  //   display: none;
+  // }
 
+  //Changes the background color of the mobile nav drawer.
   .usa-nav {
     width: 100%;
     background-color: #003366;
   }
-
+  //Changes text color of mobile nav drawer contents to white.
+  //(going to remove this and apply the uswds text classes to appropriate elements).
   .usa-nav__primary-item > .usa-nav__link > span,
   .usa-nav__primary-item > span,
   .usa-nav__submenu-item > a {
     color: white;
+  }
+
+  //Margin for filter button in mobile view.
+  .cbp-button--filter {
+    margin-top: 8px;
   }
 }
 
 .main-content {
   background-color: #fcfcfc;
 }
+
+// Putting the search bar in application header turns the search button color to transparent.
+// This is set to keep the button in its default color.
 .usa-nav__primary > form > .usa-button {
   background-color: #2672de;
 }
 
-.usa-nav__secondary-item > a {
+//Sets the link color of the global nav bar white for both desktop & mobile views.
+.cbp-universal-header__links > ul > li > a > span,
+.cbp-universal-header__links > ul > li > button > span {
   color: white;
+}
+
+//Changes the external icons to its white version (Card Archetype --> icon next to  Most Recent Application)
+.usa-link--external::after {
+  background-image: url(../../assets/images/external-link-alt-hover.svg);
 }
