@@ -25,6 +25,7 @@ i.e.
     display: block;
     color: white;
     margin-bottom: 2px;
+
     + span {
       color: white;
     }
@@ -39,4 +40,26 @@ i.e.
   .cbp-global-header {
     display: none;
   }
+
+  .usa-nav {
+    width: 100%;
+    background-color: #003366;
+  }
+
+  .usa-nav__primary-item > .usa-nav__link > span,
+  .usa-nav__primary-item > span,
+  .usa-nav__submenu-item > a {
+    color: white;
+  }
+}
+
+.main-content {
+  background-color: #fcfcfc;
+}
+.usa-nav__primary > form > .usa-button {
+  background-color: #2672de;
+}
+
+.usa-nav__secondary-item > a {
+  color: white;
 }
