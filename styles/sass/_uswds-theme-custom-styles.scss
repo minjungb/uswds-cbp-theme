@@ -20,10 +20,17 @@ i.e.
 ----------------------------------------
 */
 
-@media only screen and (min-width: 1022px) {
+// @TODO: Universal header breaks at 1024px. Just 1024.
+
+@media only screen and (min-width: 64em) {
+  .cbp-mobile-search {
+    display: none !important;
+  }
+
   .cbp-universal-header--icons {
     display: none;
   }
+
   .cbp-app-header__mobile {
     display: none;
   }
@@ -33,6 +40,8 @@ i.e.
   .cbp-universal-header--links {
     display: flex;
     align-items: center;
+    width: 55em;
+    margin-bottom: 1em;
   }
 
   //Changes background color of the drop down menu under Card Archetypes in the Global header.
@@ -69,17 +78,18 @@ i.e.
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
   .cbp-universal-header--icons {
-    display: visible;
+    display: flex;
+    align-items: center;
+
+    .usa-menu-btn {
+      align-items: center;
+    }
   }
 }
 
 @media only screen and (max-width: 64em) {
-  .usa-navbar {
-    height: 80px;
-  }
-
   .cbp-logo__desktop {
     display: none;
   }
@@ -89,12 +99,25 @@ i.e.
     max-width: 4.5em;
     margin-right: 12px;
   }
+  .cbp-app-subnav--header {
+    padding-bottom: 24px;
+  }
+
+  // .cbp-mobile-search {
+  //   display: block !important;
+  // }
+
+  .usa-navbar {
+    height: 80px;
+  }
 
   //Changes the background color of the mobile nav drawer.
   .usa-nav {
     width: 100%;
+    padding: 3em;
     background-color: #003366;
   }
+
   //Changes text color of mobile nav drawer contents to white.
   //(going to remove this and apply the uswds text classes to appropriate elements).
   .usa-nav__primary-item > .usa-nav__link > span,
@@ -115,6 +138,7 @@ i.e.
 
   .usa-nav__primary > .usa-search {
     display: none;
+    margin-top: 16px;
   }
 
   .usa-nav__primary button,
