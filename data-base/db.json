@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Card Title 1",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-2",
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "title": "Card Title 2",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-2"
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "title": "Card Title 3",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-2",
         "category-tag-3"
@@ -31,7 +31,7 @@
     {
       "id": 4,
       "title": "Card Title 4",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-3",
         "category-tag-4"
@@ -40,7 +40,7 @@
     {
       "id": 5,
       "title": "Card Title 5",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-5"
       ]
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "title": "Card Title 6",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-2",
@@ -58,7 +58,7 @@
     {
       "id": 7,
       "title": "Card Title 7",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-3",
         "category-tag-7"
@@ -67,7 +67,7 @@
     {
       "id": 8,
       "title": "Card Title 8",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-2",
         "category-tag-8"
@@ -76,7 +76,7 @@
     {
       "id": 9,
       "title": "Card Title 9",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-9"
@@ -85,7 +85,7 @@
     {
       "id": 10,
       "title": "Card Title 10",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-10"
@@ -94,7 +94,7 @@
     {
       "id": 11,
       "title": "Card Title 11",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-2",
         "category-tag-11"
@@ -103,7 +103,7 @@
     {
       "id": 12,
       "title": "Card Title 12",
-      "data": "This card has this passage of example text to emphasize truncation and reveal functionality. This is an example of the expanded text that clicking on the more button will reveal.",
+      "data": "This card has this passage of example text to emphasize truncation and reveal functionality...",
       "tags": [
         "category-tag-1",
         "category-tag-12"
