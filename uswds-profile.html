@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USWDS Profile Page</title>
+    <link rel="stylesheet" href="styles/css/styles.css" /></head
+  ><style>
+    @media screen and (max-width: 63em) {
+      .cbp-app-header {
+        display: block;
+      }
+    }
+  </style>
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--extended">
+      <div style="background: #003366">
+        <div class="usa-navbar">
+          <div class="usa-logo" id="extended-logo">
+            <em class="usa-logo__text"
+              ><a href="/" title="Home" aria-label="Home"
+                ><img
+                  src="assets/images/cbp-logo-white.svg"
+                  style="max-width: 6em" /></a
+            ></em>
+          </div>
+          <button class="usa-menu-btn">Menu</button>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+          <div class="usa-nav__inner">
+            <button class="usa-nav__close">
+              <img src="/assets/images/close.svg" role="img" alt="close" />
+            </button>
+            <div class="cbp-app-header display-flex grid-row">
+              <span
+                class="font-sans-lg grid-col-2 flex-align-self-center text-medium"
+                >Passenger App</span
+              >
+              <ul class="usa-nav__primary usa-accordion grid-col-fill">
+                <li class="usa-nav__primary-item">
+                  <a class="usa-nav__link" href="javascript:void(0)"
+                    ><span>Child 1</span></a
+                  >
+                </li>
+                <li class="usa-nav__primary-item">
+                  <a class="usa-nav__link" href="javascript:void(0)"
+                    ><span>Child 2</span></a
+                  >
+                </li>
+                <li class="usa-nav__primary-item">
+                  <button
+                    class="usa-accordion__button usa-nav__link"
+                    aria-expanded="false"
+                    aria-controls="extended-nav-section-two"
+                  >
+                    <span>Child 3</span>
+                  </button>
+                  <ul id="extended-nav-section-two" class="usa-nav__submenu">
+                    <li class="usa-nav__submenu-item">
+                      <a href="#" class="">Navigation link</a>
+                    </li>
+                    <li class="usa-nav__submenu-item">
+                      <a href="#" class="">Navigation link</a>
+                    </li>
+                    <li class="usa-nav__submenu-item">
+                      <a href="#" class="">Navigation link</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="usa-nav__primary-item">
+                  <a class="usa-nav__link" href="javascript:void(0)"
+                    ><span>Child 4</span></a
+                  >
+                </li>
+              </ul>
+              <form
+                class="usa-search usa-search--small flex-align-center grid-col-fill"
+                role="search"
+              >
+                <label class="usa-sr-only" for="extended-search-field-small"
+                  >Search small</label
+                ><input
+                  class="usa-input"
+                  id="extended-search-field-small"
+                  type="search"
+                  name="search"
+                /><button class="usa-button" type="submit">
+                  <span class="usa-sr-only">Search</span>
+                </button>
+              </form>
+            </div>
+            <div class="usa-nav__secondary">
+              <ul class="usa-nav__secondary-links">
+                <li class="usa-nav__secondary-item">
+                  <a href=""
+                    ><span class="text-white"
+                      ><i class="fas fa-th-large margin-right-05"></i>Card
+                      Archetype</span
+                    ></a
+                  >
+                </li>
+                <li class="usa-nav__secondary-item">
+                  <a href=""
+                    ><span class="text-white"
+                      ><i class="fas fa-comment margin-right-05"></i
+                      >Feedback</span
+                    ></a
+                  >
+                </li>
+                <li class="usa-nav__secondary-item">
+                  <a href=""
+                    ><span class="text-white"
+                      ><i class="fas fa-user margin-right-05"></i>User
+                      Name</span
+                    ></a
+                  >
+                </li>
+              </ul>
+              <div style="height: 40px"></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" style="background: #fcfcfc">
+      <div class="grid-container margin-top-4">
+        <h1>Smithington, Jonathan</h1>
+        <hr
+          style="border: 3px solid #005ea2"
+          class="margin-top-205 margin-bottom-205"
+        />
+        <div class="grid-row">
+          <div class="grid-col">
+            <button class="usa-button usa-button--outline">
+              <i class="fas fa-arrow-left margin-right-1"></i>Back
+            </button>
+          </div>
+          <div class="grid-col">
+            <button class="usa-button usa-button--outline">
+              <i class="fas fa-arrow-right margin-right-1"></i>Start Encounter
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/aa019ad450.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/uswds.min.js"></script>
+  </body>
+</html>
