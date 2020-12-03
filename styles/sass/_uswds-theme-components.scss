@@ -80,8 +80,8 @@ $theme-input-state-border-width: 0.5;
 // Header
 $theme-header-font-family: 'ui';
 $theme-header-logo-text-width: 33%;
-$theme-header-max-width: 'widescreen';
-$theme-header-min-width: 'widescreen';
+$theme-header-max-width: 'none';
+$theme-header-min-width: 'desktop';
 
 // Hero
 $theme-hero-image: '#{$theme-image-path}/hero.png';
