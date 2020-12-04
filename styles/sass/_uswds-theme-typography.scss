@@ -37,7 +37,7 @@ Accepts true or false
 ----------------------------------------
 */
 
-$theme-respect-user-font-size: true;
+$theme-respect-user-font-size: false;
 
 // $theme-root-font-size only applies when
 // $theme-respect-user-font-size is set to
@@ -49,7 +49,7 @@ $theme-respect-user-font-size: true;
 
 // Accepts values in px
 
-$theme-root-font-size: 10px;
+$theme-root-font-size: 14px;
 
 /*
 ----------------------------------------
@@ -124,7 +124,7 @@ names to something more descriptive.
 $theme-typeface-tokens: (
   roboto: (
     display-name: 'Roboto',
-    cap-height: 364px,
+    cap-height: 355px,
   ),
 );
 
