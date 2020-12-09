@@ -1,0 +1,77 @@
+body {
+  color: #1b1b1b;
+}
+
+.cbp-text-body {
+  @include u-text('normal');
+  font-size: 1rem;
+  line-height: 20px;
+  max-width: 75em;
+}
+
+.cbp-text-button {
+  @include u-text('medium', 'uppercase');
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.cbp-text-subhead {
+  @include u-text('medium');
+  font-size: 0.889rem;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+.cbp-text-heading-3xs {
+  @include u-text('bold');
+  font-size: 1.125rem;
+  line-height: 20px;
+}
+
+.cbp-text-heading-2xs {
+  @include u-text('medium');
+  font-size: 1.266rem;
+  line-height: 24px;
+}
+
+.cbp-text-heading-xs {
+  @include u-text('medium');
+  font-size: 1.424rem;
+  line-height: 24px;
+}
+
+.cbp-text-heading-sm {
+  @include u-text('normal');
+  font-size: 1.602rem;
+  line-height: 28px;
+}
+
+.cbp-text-heading-md {
+  @include u-text('normal');
+  font-size: 1.802rem;
+  line-height: 32px;
+}
+
+.cbp-text-heading-lg {
+  @include u-text('normal');
+  font-size: 2.027rem;
+  line-height: 36px;
+}
+
+.cbp-text-heading-xl {
+  @include u-text('light');
+  font-size: 2.281rem;
+  line-height: 40px;
+}
+
+.cbp-text-heading-2xl {
+  @include u-text('thin');
+  font-size: 2.566rem;
+  line-height: 44px;
+}
+
+.cbp-text-heading-3xl {
+  @include u-text('thin');
+  font-size: 2.887rem;
+  line-height: 44px;
+}
