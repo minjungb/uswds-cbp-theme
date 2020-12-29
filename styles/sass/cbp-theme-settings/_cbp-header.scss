@@ -7,9 +7,26 @@
       font-weight: 700;
 
       &:hover {
-          color: $cbp-accent-primary;
+          color: white;
       }
   }
+
+  .usa-button {
+      background-color: #003366;
+      
+      &:hover {
+          background-color: rgb(255, 255, 255, 0.2);
+      }
+
+      //Remove the underline for links in USWDS's unstyled buttons
+      &--unstyled {
+        text-decoration: none;
+
+        &:hover {
+            background: none;
+        }
+      }
+   }
 
   //"-- Recent Applications" section in Application Menu Dropdown
   &-subitem {
@@ -18,67 +35,37 @@
       font-weight: 500;
       height: $cbp-size-4;
       text-decoration: none;
-    
-      //External link icon
-      &.icon-external {
-        &:before {
-            content: "\f35d";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin: 0 $cbp-size-2;  
-          }
-      }
-
-      &.icon-notification {
-          &:before {
-            content: "\f0f3";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin: 0 $cbp-size-2;    
-          }
-      }
       
-      
-
       &:hover {
-          background: white;  
-          color: $cbp-accent-primary;      
+          background: rgb(255, 255, 255,0.2);  
       }
-  }
+    }
+
+    &-subtext {
+        display: inline-block;
+        color: $cbp-accent-primary-light;
+        font-style: italic;
+        margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
+
+    }
 
   .dropdown-content {
     position: absolute;
     display: none;
+    left: $cbp-size-2px;
     z-index: 1;
-    left: $cbp-size-neg-2;
     background: #003366;
-    min-width: 240px;
-    margin-top: 2rem;
+    width: 240px;
     border-radius: 0 0 5px 5px;
+    padding-top: $cbp-size-2;
+    margin-top: $cbp-size-1;
 
     &.show {display: block;}
-  }
 
-  hr {
-      border-color: $cbp-base-light;
-      margin: $cbp-size-1 $cbp-size-2;
-  }
-}
-
-//Remove the underline for links in USWDS's unstyled buttons
-.usa-button--unstyled {
-    text-decoration: none;
-
-    //Change hover color of "App menu header". 
-    //Current hover color is a placeholder
-    &:hover {
-        text-decoration: none;  
-        color: $cbp-accent-primary-light;
-        
-        i {
-            color: $cbp-accent-primary-light;
-        }
+    &.user-profile {
+        width: 150px;
     }
+  }
 }
 
 .cbp-container {
