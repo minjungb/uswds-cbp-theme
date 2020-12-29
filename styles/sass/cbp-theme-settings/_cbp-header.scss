@@ -1,0 +1,115 @@
+.cbp-header {
+  background: #003366;
+  height: 80px;
+
+  &-text {
+      color: white;
+      font-weight: 700;
+
+      &:hover {
+          color: $cbp-accent-primary;
+      }
+  }
+
+  //"-- Recent Applications" section in Application Menu Dropdown
+  &-subitem {
+      align-items: center;
+      display: flex;
+      font-weight: 500;
+      height: $cbp-size-4;
+      text-decoration: none;
+    
+      //External link icon
+      &.icon-external {
+        &:before {
+            content: "\f35d";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin: 0 $cbp-size-2;  
+          }
+      }
+
+      &.icon-notification {
+          &:before {
+            content: "\f0f3";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin: 0 $cbp-size-2;    
+          }
+      }
+      
+      
+
+      &:hover {
+          background: white;  
+          color: $cbp-accent-primary;      
+      }
+  }
+
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    left: $cbp-size-neg-2;
+    background: #003366;
+    min-width: 240px;
+    margin-top: 2rem;
+    border-radius: 0 0 5px 5px;
+
+    &.show {display: block;}
+  }
+
+  hr {
+      border-color: $cbp-base-light;
+      margin: $cbp-size-1 $cbp-size-2;
+  }
+}
+
+//Remove the underline for links in USWDS's unstyled buttons
+.usa-button--unstyled {
+    text-decoration: none;
+
+    //Change hover color of "App menu header". 
+    //Current hover color is a placeholder
+    &:hover {
+        text-decoration: none;  
+        color: $cbp-accent-primary-light;
+        
+        i {
+            color: $cbp-accent-primary-light;
+        }
+    }
+}
+
+.cbp-container {
+    align-items: center;
+    height: inherit;
+    margin: auto $cbp-size-4;
+
+    i {
+        margin-right: $cbp-size-1;
+    }
+}
+
+
+//widescreen
+@media (min-width: 1400px) {
+
+}
+//desktop
+@media (max-width: 1024px){
+
+}
+//tablet
+@media (max-width: 640px){
+    //Removes the text in the header so that only the icons show. 
+    .cbp-header-text {
+        display: none;
+    }
+}
+//phone
+@media (max-width: 320px) {
+    .cbp-header-text {
+        display: none;
+    }
+}
