@@ -3,51 +3,50 @@
   height: 80px;
 
   &-text {
-      color: white;
-      font-weight: 700;
+    color: white;
+    font-weight: 700;
 
-      &:hover {
-          color: white;
-      }
+    &:hover {
+      color: white;
+    }
   }
 
   .usa-button {
-      background-color: #003366;
-      
+    background-color: #003366;
+
+    &:hover {
+      background-color: rgb(255, 255, 255, 0.2);
+    }
+
+    //Remove the underline for links in USWDS's unstyled buttons
+    &--unstyled {
+      text-decoration: none;
+
       &:hover {
-          background-color: rgb(255, 255, 255, 0.2);
+        background: none;
       }
-
-      //Remove the underline for links in USWDS's unstyled buttons
-      &--unstyled {
-        text-decoration: none;
-
-        &:hover {
-            background: none;
-        }
-      }
-   }
+    }
+  }
 
   //"-- Recent Applications" section in Application Menu Dropdown
   &-subitem {
-      align-items: center;
-      display: flex;
-      font-weight: 500;
-      height: $cbp-size-4;
-      text-decoration: none;
-      
-      &:hover {
-          background: rgb(255, 255, 255,0.2);  
-      }
-    }
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    height: $cbp-size-4;
+    text-decoration: none;
 
-    &-subtext {
-        display: inline-block;
-        color: $cbp-accent-primary-light;
-        font-style: italic;
-        margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
-
+    &:hover {
+      background: rgb(255, 255, 255, 0.2);
     }
+  }
+
+  &-subtext {
+    display: inline-block;
+    color: $cbp-accent-primary-light;
+    font-style: italic;
+    margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
+  }
 
   .dropdown-content {
     position: absolute;
@@ -60,43 +59,75 @@
     padding-top: $cbp-size-2;
     margin-top: $cbp-size-1;
 
-    &.show {display: block;}
+    &.show {
+      display: block;
+    }
 
     &.user-profile {
-        width: 150px;
+      width: 150px;
     }
   }
 }
 
-.cbp-container {
-    align-items: center;
-    height: inherit;
-    margin: auto $cbp-size-4;
+.cbp-logo {
+  &-text {
+    color: white;
+    font-weight: 500;
+  }
 
-    i {
-        margin-right: $cbp-size-1;
-    }
+  &-mobile {
+    display: none;
+  }
 }
 
+.cbp-container {
+  align-items: center;
+  height: inherit;
+  margin: auto $cbp-size-4;
 
+  i {
+    margin-right: $cbp-size-1;
+  }
+}
+
+.dropdown-content-mobile {
+  display: none;
+}
 //widescreen
 @media (min-width: 1400px) {
-
 }
 //desktop
-@media (max-width: 1024px){
-
+@media (max-width: 1024px) {
 }
 //tablet
-@media (max-width: 640px){
-    //Removes the text in the header so that only the icons show. 
-    .cbp-header-text {
-        display: none;
+@media (max-width: 768px) {
+  //Removes the text in the header so that only the icons show.
+  .cbp-header-text {
+    display: none;
+  }
+
+  .cbp-logo {
+    display: none;
+
+    &-mobile {
+      display: flex;
     }
+    &-text {
+      margin: auto;
+      padding-left: $cbp-size-2;
+    }
+  }
+
+  .dropdown-content-mobile {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #003366;
+    z-index: 1;
+    padding: $cbp-size-3;
+  }
 }
 //phone
 @media (max-width: 320px) {
-    .cbp-header-text {
-        display: none;
-    }
 }
