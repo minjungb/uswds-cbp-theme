@@ -126,6 +126,37 @@
     background: #003366;
     z-index: 1;
     padding: $cbp-size-3;
+
+    .cbp-text-header-lg {
+    }
+
+    .cbp-header-subtext {
+      margin: $cbp-size-4 0 $cbp-size-1 0;
+    }
+
+    .cbp-text-button {
+      display: block;
+      text-decoration: none;
+      margin: $cbp-size-2 auto auto auto;
+    }
+
+    > .dropdown-content {
+      margin: 0;
+    }
+
+    .cbp-header-subitem:hover {
+      background: transparent;
+    }
+
+    .usa-button {
+      max-width: 100px;
+      text-align: right;
+
+      .cbp-close-icon {
+        color: white;
+        font-size: 16px;
+      }
+    }
   }
 }
 //phone
