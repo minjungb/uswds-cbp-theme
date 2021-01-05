@@ -48,25 +48,11 @@
     margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
   }
 
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    left: $cbp-size-2px;
-    z-index: 1;
-    background: #003366;
-    width: 240px;
-    border-radius: 0 0 5px 5px;
-    padding-top: $cbp-size-2;
-    margin-top: $cbp-size-1;
-
-    &.show {
-      display: block;
-    }
-
-    &.user-profile {
-      width: 150px;
-    }
+  .cbp-text-button{
+    display: inline-block;
+    text-decoration: none;
   }
+  
 }
 
 .cbp-logo {
@@ -90,20 +76,47 @@
   }
 }
 
-.dropdown-content-mobile {
+.dropdown-content {
+  position: absolute;
+  display: none;
+  left: $cbp-size-2px;
+  z-index: 1;
+  background: #003366;
+  border-radius: 0 0 5px 5px;
+  padding-top: $cbp-size-2;
+  margin-top: $cbp-size-1;
+
+  &.show {
+    display: block;
+  }
+
+  &.user-profile {
+    min-width: 150px;
+    margin-left: -24px;
+  }
+}
+
+.dropdown-header-mobile {
   display: none;
 }
-//widescreen
-@media (min-width: 1400px) {
-}
-//desktop
-@media (max-width: 1024px) {
+
+//desktop 1024px
+@media (min-width: 1024px) {
+  .usa-nav {
+    width: 100%;
+  }
+  .usa-nav__inner{
+    margin: auto $cbp-size-4;
+  }
+  
 }
 //tablet
 @media (max-width: 768px) {
   //Removes the text in the header so that only the icons show.
-  .cbp-header-text {
-    display: none;
+  button, a{
+    > .cbp-header-text {
+      display: none;
+    }
   }
 
   .cbp-logo {
@@ -117,18 +130,6 @@
       padding-left: $cbp-size-2;
     }
   }
-
-  .dropdown-content-mobile {
-    display: block;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background: #003366;
-    z-index: 1;
-    padding: $cbp-size-3;
-
-    .cbp-text-header-lg {
-    }
 
     .cbp-header-subtext {
       margin: $cbp-size-4 0 $cbp-size-1 0;
@@ -157,8 +158,33 @@
         font-size: 16px;
       }
     }
+
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      background: #003366;
+      z-index: 1;
+      padding: $cbp-size-3;
+      
+      &.show {
+        display: block;
+      }
+
+      &.user-profile{
+        margin-left: 0;
+      }
+    }
+
+    .dropdown-header-mobile {
+      display: flex;
+    }
   }
-}
+
 //phone
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  
 }

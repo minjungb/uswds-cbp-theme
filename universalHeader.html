@@ -8,61 +8,6 @@
   </head>
   <body>
     <div>
-      <div class="dropdown-content-mobile">
-        <div class="display-flex margin-bottom-2">
-          <h2
-            class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2"
-          >
-            <i class="fas fa-user font-ui-lg text-white margin-right-1"></i>User
-            Name
-          </h2>
-          <button class="usa-button usa-button--unstyled margin-left-auto">
-            <i class="fas fa-times-circle cbp-close-icon"></i>
-          </button>
-        </div>
-        <div class="dropdown-content">
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Optional Link 1
-          </a>
-
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Optional Link 2</a
-          >
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Optional Link 3</a
-          >
-          <a class="cbp-text-button" href="#" target="_blank"
-            ><i class="fas fa-sign-out-alt margin-right-05"></i>Logout</a
-          >
-        </div>
-      </div>
-      <!-- <div class="dropdown-content-mobile">
-        <div class="display-flex">
-          <h2
-            class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2"
-          >
-            <i class="fas fa-th font-ui-lg text-white margin-right-1"></i>Card
-            Archetype
-          </h2>
-          <button class="usa-button usa-button--unstyled margin-left-auto">
-            <i class="fas fa-times-circle cbp-close-icon"></i>
-          </button>
-        </div>
-        <div class="dropdown-content">
-          <span class="cbp-header-subtext">Recently Visited Applications</span>
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Most Recent Application
-          </a>
-
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Next Recent Application</a
-          >
-          <a class="cbp-header-subitem" href="#" target="_blank">
-            Next Recent Application</a
-          >
-          <a class="cbp-text-button" href="#" target="_blank">View All Apps</a>
-        </div>
-      </div> -->
       <div class="cbp-header">
         <div class="cbp-container grid-row">
           <!-- Logo section -->
@@ -94,27 +39,39 @@
                 >Card Archetype</span
               >
             </button>
+            
             <div id="cbpHeaderDropdown" class="dropdown-content">
+              <div class="dropdown-header-mobile">
+                <h2
+                  class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2"
+                >
+                  <i class="fas fa-th font-ui-lg text-white margin-right-1"></i>Card
+                  Archetype
+                </h2>
+                <button class="usa-button usa-button--unstyled margin-left-auto">
+                  <i class="fas fa-times-circle cbp-close-icon"></i>
+                </button>
+              </div>
               <span class="cbp-header-subtext"
                 >Recently Visited Applications</span
               >
               <a class="cbp-header-subitem" href="#" target="_blank"
-                ><span class="cbp-header-text margin-left-3"
+                ><span class="margin-left-3"
                   >Most Recent Application</span
                 ></a
               >
               <a class="cbp-header-subitem" href="#" target="_blank"
-                ><span class="cbp-header-text margin-left-3"
+                ><span class="margin-left-3"
                   >Next Recent Application</span
                 ></a
               >
               <a class="cbp-header-subitem" href="#" target="_blank"
-                ><span class="cbp-header-text margin-left-3"
+                ><span class="margin-left-3"
                   >Next Recent Application</span
                 ></a
               >
               <a
-                class="usa-button usa-button--unstyled usa-button--inverse cbp-text-button cbp-margin-2"
+                class="cbp-text-button cbp-margin-2"
                 href="#"
                 target="_blank"
                 >View All Apps</a
@@ -144,8 +101,16 @@
               <div
                 id="cbpHeaderDropdown2"
                 class="dropdown-content user-profile"
-                style="margin-left: -24px"
               >
+              <div class="dropdown-header-mobile margin-bottom-2">
+                <h2 class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2">
+                  <i class="fas fa-user font-ui-lg text-white margin-right-1"></i>
+                  User Name
+                </h2>
+                <button class="usa-button usa-button--unstyled margin-left-auto">
+                  <i class="fas fa-times-circle cbp-close-icon"></i>
+                </button>
+              </div>
                 <a class="cbp-header-subitem" href="#" target="_blank"
                   ><span class="margin-left-3">Optional Link 1</span></a
                 >
@@ -166,38 +131,98 @@
           </div>
         </div>
       </div>
+
+      <nav aria-label="Primary navigation" class="usa-nav">
+        <div class="usa-nav__inner">
+          <button class="usa-nav__close">
+            <img src="/assets/images/close.svg" role="img" alt="close" />
+          </button>
+          <div class="cbp-app-header display-flex grid-row">
+            <span
+              class="font-sans-lg grid-col-1 flex-align-self-center text-medium"
+              >Card Archetype</span
+            >
+            <ul class="usa-nav__primary usa-accordion grid-col-fill">
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 1</span></a
+                >
+              </li>
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 2</span></a
+                >
+              </li>
+              <li class="usa-nav__primary-item">
+                <button
+                  class="usa-accordion__button usa-nav__link"
+                  aria-expanded="false"
+                  aria-controls="extended-nav-section-two"
+                >
+                  <span>Child 3</span>
+                </button>
+                <ul id="extended-nav-section-two" class="usa-nav__submenu">
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                  <li class="usa-nav__submenu-item">
+                    <a href="#" class="">Navigation link</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-nav__primary-item">
+                <a class="usa-nav__link" href="javascript:void(0)"
+                  ><span>Child 4</span></a
+                >
+              </li>
+            </ul>
+            <form
+              class="usa-search usa-search--small flex-align-center grid-col-fill"
+              role="search"
+            >
+              <label class="usa-sr-only" for="extended-search-field-small"
+                >Search small</label
+              ><input
+                class="usa-input"
+                id="extended-search-field-small"
+                type="search"
+                name="search"
+              /><button class="usa-button" type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </form>
+          </div>
+          
+        </div>
+      </nav>
     </div>
+
+    
 
     <!-- JS for dropdowns -->
     <script>
       /* When the user clicks on the button,
       toggle between hiding and showing the dropdown content */
 
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
-        // some code..
-        console.log(navigator.userAgent);
-      }
       function showDropdown(a) {
-        //document.getElementById("cbpHeaderDropdown").classList.toggle("show");
-        console.log(a.parentNode.getElementsByClassName('dropdown-content')[0]);
+        console.log('click');
         a.parentNode
-          .getElementsByClassName('dropdown-content')[0]
-          .classList.toggle('show');
+          .getElementsByClassName("dropdown-content")[0]
+          .classList.toggle("show");
       }
 
       // Close the dropdown if the user clicks outside of the menu
       window.onclick = function (event) {
         //the cbp-header-dropdown class is used on the parent of the class 'dropdown content'.
-        if (!event.target.matches('.cbp-header-dropdown')) {
-          var dropdowns = document.getElementsByClassName('dropdown-content');
+        if (!event.target.matches(".cbp-header-dropdown")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
           for (var i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
             }
           }
         }
