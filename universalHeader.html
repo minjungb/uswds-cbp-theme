@@ -28,8 +28,9 @@
             </div>
           </div>
 
+          <div class="grid-row grid-col-fill display-flex flex-justify-end">
           <!-- Card Archetype section & dropdown -->
-          <div class="grid-col-3">
+          <div class="grid-col">
             <button
               onClick="showDropdown(this)"
               class="usa-button cbp-header-dropdown"
@@ -48,7 +49,7 @@
                   <i class="fas fa-th font-ui-lg text-white margin-right-1"></i>Card
                   Archetype
                 </h2>
-                <button class="usa-button usa-button--unstyled margin-left-auto">
+                <button onClick="closeDropdown()" class="usa-button usa-button--unstyled margin-left-auto">
                   <i class="fas fa-times-circle cbp-close-icon"></i>
                 </button>
               </div>
@@ -80,24 +81,24 @@
           </div>
 
           <!-- Feedback & User Name -->
-          <div class="grid-col-fill display-flex flex-justify-end">
-            <a href="#" class="usa-button usa-button--unstyled margin-right-2">
+          <div class="grid-col tablet:grid-col-auto">
+            <a href="#" class="usa-button">
               <i class="fas fa-comment font-ui-md text-white"></i>
               <span class="cbp-header-text text-right"> Feedback </span>
             </a>
+          </div>
 
             <!-- User profile & dropdown -->
-            <div style="position: relative">
+            <div class="grid-col tablet:grid-col-auto" style="position: relative">
               <button
                 onClick="showDropdown(this)"
-                class="usa-button usa-button--unstyled cbp-header-dropdown"
-              >
+                class="usa-button cbp-header-dropdown"
+              > 
                 <i class="fas fa-user font-ui-md text-white"></i>
                 <span class="cbp-header-text text-right cbp-header-dropdown">
                   User Name
                 </span>
               </button>
-              <!-- @TODO: transfer negative margin-left property into CSS class -->
               <div
                 id="cbpHeaderDropdown2"
                 class="dropdown-content user-profile"
@@ -107,7 +108,7 @@
                   <i class="fas fa-user font-ui-lg text-white margin-right-1"></i>
                   User Name
                 </h2>
-                <button class="usa-button usa-button--unstyled margin-left-auto">
+                <button onClick="closeDropdown()" class="usa-button usa-button--unstyled margin-left-auto">
                   <i class="fas fa-times-circle cbp-close-icon"></i>
                 </button>
               </div>
@@ -121,113 +122,17 @@
                   ><span class="margin-left-3">Optional Link 3</span></a
                 >
                 <a
-                  class="usa-button usa-button--unstyled cbp-text-button cbp-margin-2"
+                  class="cbp-text-button cbp-margin-2"
                   href="#"
                   target="_blank"
                   ><span><i class="fas fa-sign-out-alt"></i>Logout</span></a
                 >
               </div>
-            </div>
+            </div>   
           </div>
         </div>
       </div>
-
-      <nav aria-label="Primary navigation" class="usa-nav">
-        <div class="usa-nav__inner">
-          <button class="usa-nav__close">
-            <img src="/assets/images/close.svg" role="img" alt="close" />
-          </button>
-          <div class="cbp-app-header display-flex grid-row">
-            <span
-              class="font-sans-lg grid-col-1 flex-align-self-center text-medium"
-              >Card Archetype</span
-            >
-            <ul class="usa-nav__primary usa-accordion grid-col-fill">
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"
-                  ><span>Child 1</span></a
-                >
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"
-                  ><span>Child 2</span></a
-                >
-              </li>
-              <li class="usa-nav__primary-item">
-                <button
-                  class="usa-accordion__button usa-nav__link"
-                  aria-expanded="false"
-                  aria-controls="extended-nav-section-two"
-                >
-                  <span>Child 3</span>
-                </button>
-                <ul id="extended-nav-section-two" class="usa-nav__submenu">
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class="">Navigation link</a>
-                  </li>
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class="">Navigation link</a>
-                  </li>
-                  <li class="usa-nav__submenu-item">
-                    <a href="#" class="">Navigation link</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="usa-nav__primary-item">
-                <a class="usa-nav__link" href="javascript:void(0)"
-                  ><span>Child 4</span></a
-                >
-              </li>
-            </ul>
-            <form
-              class="usa-search usa-search--small flex-align-center grid-col-fill"
-              role="search"
-            >
-              <label class="usa-sr-only" for="extended-search-field-small"
-                >Search small</label
-              ><input
-                class="usa-input"
-                id="extended-search-field-small"
-                type="search"
-                name="search"
-              /><button class="usa-button" type="submit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </form>
-          </div>
-          
-        </div>
-      </nav>
     </div>
-
-    
-
-    <!-- JS for dropdowns -->
-    <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-
-      function showDropdown(a) {
-        console.log('click');
-        a.parentNode
-          .getElementsByClassName("dropdown-content")[0]
-          .classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of the menu
-      window.onclick = function (event) {
-        //the cbp-header-dropdown class is used on the parent of the class 'dropdown content'.
-        if (!event.target.matches(".cbp-header-dropdown")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
 
     <!-- Font Awesome script for icons -->
     <script
@@ -235,5 +140,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/uswds.min.js"></script>
+    <!-- JS for dropdowns -->
+    <script src="js/universalHeader.js"></script>
   </body>
 </html>
