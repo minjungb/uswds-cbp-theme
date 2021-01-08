@@ -1,0 +1,176 @@
+.cbp-header {
+  background: #003366;
+  height: 80px;
+
+  //default color and font weight for the universal header
+  &-text {
+    color: white;
+    font-weight: 700;
+  }
+
+  .cbp-container {
+    align-items: center;
+    height: inherit;
+    margin: auto $cbp-size-4;
+
+    i {
+      margin-right: $cbp-size-1;
+    }
+  }
+
+  //takes out default underline that comes with
+  //USWDS' usa-button--unstyled class.
+  .cbp-text-button {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  //changes to USWDS' usa-button class
+  .usa-button {
+    background-color: #003366;
+
+    &:hover {
+      background: rgb(255, 255, 255, 0.2);
+    }
+  }
+
+  //"-- Recently Visited Applications" section in Application Directory Menu Dropdown
+  &-subitem {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    height: $cbp-size-4;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      background: rgb(255, 255, 255, 0.2);
+      color: white;
+    }
+  }
+
+  //Recently Visited Applications text
+  &-subtext {
+    display: inline-block;
+    color: $cbp-accent-primary-light;
+    font-style: italic;
+    margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
+  }
+}
+
+.cbp-logo {
+  &-text {
+    color: white;
+    font-weight: 500;
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+//dropdown styling for app directory and user profile.
+//desktop resolution
+.dropdown-content {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background: #003366;
+  border-radius: 0 0 5px 5px;
+  padding-top: $cbp-size-2;
+  margin-top: $cbp-size-1;
+
+  &.show {
+    display: block;
+  }
+
+  &.user-profile {
+    min-width: 150px;
+  }
+}
+
+//This is the header name for the mobile dropdowns,
+//default is hidden at desktop/tablet resolution.
+.dropdown-header-mobile {
+  display: none;
+}
+
+//tablet
+@media (max-width: 768px) {
+  //Removes the text in the header so that only the icons show.
+  button,
+  a {
+    > .cbp-header-text {
+      display: none;
+    }
+  }
+
+  //Changes full logo to meatball logo & CBP text.
+  .cbp-logo {
+    display: none;
+
+    &-mobile {
+      display: flex;
+    }
+    &-text {
+      margin: auto;
+      padding-left: $cbp-size-2;
+    }
+  }
+
+  .icons-mobile {
+    display: flex;
+  }
+
+  .cbp-header-subtext {
+    margin: $cbp-size-4 0 $cbp-size-1 0;
+  }
+
+  .cbp-text-button {
+    display: block;
+    text-decoration: none;
+    margin: $cbp-size-2 auto auto auto;
+    color: white;
+  }
+
+  > .dropdown-content {
+    margin: 0;
+  }
+
+  .cbp-header-subitem:hover {
+    background: transparent;
+  }
+
+  //full screen dropdown menu
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: #003366;
+    z-index: 1;
+    padding: $cbp-size-3;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  //close button on the mobile dropdown
+  .usa-button {
+    max-width: 100px;
+    text-align: right;
+
+    .cbp-close-icon {
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  //headers
+  .dropdown-header-mobile {
+    display: flex;
+  }
+}

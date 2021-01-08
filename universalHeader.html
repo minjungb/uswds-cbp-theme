@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Header Custom Component</title>
+    <link rel="stylesheet" href="styles/css/styles.css" />
+  </head>
+  <body>
+    <div>
+      <div class="cbp-header">
+        <div class="cbp-container grid-row">
+          <!-- Logo section -->
+          <div class="grid-col-auto margin-right-5">
+            <img
+              class="cbp-logo"
+              src="assets/images/cbp-logo-white.svg"
+              alt="CBP Logo"
+              height="55"
+            />
+            <div class="cbp-logo-mobile">
+              <img
+                src="assets/images/cbp-logo-circle.svg"
+                alt="CBP Logo"
+                height="55"
+              />
+              <span class="cbp-logo-text cbp-text-heading-sm">CBP</span>
+            </div>
+          </div>
+
+          <div class="grid-row grid-col-fill display-flex flex-justify-end">
+            <!-- Card Archetype section & dropdown -->
+            <div class="grid-col">
+              <button
+                onClick="showDropdown(this)"
+                class="usa-button cbp-header-dropdown"
+              >
+                <i class="fas fa-th font-ui-md text-white"></i
+                ><span class="cbp-header-text cbp-header-dropdown"
+                  >Card Archetype</span
+                >
+              </button>
+
+              <div id="cbpHeaderDropdown" class="dropdown-content">
+                <div class="dropdown-header-mobile">
+                  <h2
+                    class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2"
+                  >
+                    <i
+                      class="fas fa-th font-ui-lg text-white margin-right-1"
+                    ></i
+                    >Card Archetype
+                  </h2>
+                  <button
+                    onClick="closeDropdown()"
+                    class="usa-button usa-button--unstyled margin-left-auto"
+                  >
+                    <i class="fas fa-times-circle cbp-close-icon"></i>
+                  </button>
+                </div>
+                <span class="cbp-header-subtext"
+                  >Recently Visited Applications</span
+                >
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Most Recent Application</span></a
+                >
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Next Recent Application</span></a
+                >
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Next Recent Application</span></a
+                >
+                <a class="cbp-text-button cbp-margin-2" href="#" target="_blank"
+                  >View All Apps</a
+                >
+              </div>
+            </div>
+
+            <!-- Feedback & User Name -->
+            <div class="grid-col tablet:grid-col-auto">
+              <a href="#" class="usa-button">
+                <i class="fas fa-comment font-ui-md text-white"></i>
+                <span class="cbp-header-text text-right"> Feedback </span>
+              </a>
+            </div>
+
+            <!-- User profile & dropdown -->
+            <div
+              class="grid-col tablet:grid-col-auto"
+              style="position: relative"
+            >
+              <button
+                onClick="showDropdown(this)"
+                class="usa-button cbp-header-dropdown"
+              >
+                <i class="fas fa-user font-ui-md text-white"></i>
+                <span class="cbp-header-text text-right cbp-header-dropdown">
+                  User Name
+                </span>
+              </button>
+              <div
+                id="cbpHeaderDropdown2"
+                class="dropdown-content user-profile"
+              >
+                <div class="dropdown-header-mobile margin-bottom-2">
+                  <h2
+                    class="cbp-text-heading-lg text-white display-flex flex-align-center flex-2"
+                  >
+                    <i
+                      class="fas fa-user font-ui-lg text-white margin-right-1"
+                    ></i>
+                    User Name
+                  </h2>
+                  <button
+                    onClick="closeDropdown()"
+                    class="usa-button usa-button--unstyled margin-left-auto"
+                  >
+                    <i class="fas fa-times-circle cbp-close-icon"></i>
+                  </button>
+                </div>
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Optional Link 1</span></a
+                >
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Optional Link 2</span></a
+                >
+                <a class="cbp-header-subitem" href="#" target="_blank"
+                  ><span class="margin-left-3">Optional Link 3</span></a
+                >
+                <a class="cbp-text-button cbp-margin-2" href="#" target="_blank"
+                  ><span><i class="fas fa-sign-out-alt"></i>Logout</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Font Awesome script for icons -->
+    <script
+      src="https://kit.fontawesome.com/aa019ad450.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/uswds.min.js"></script>
+    <!-- JS for dropdowns -->
+    <script src="js/universalHeader.js"></script>
+  </body>
+</html>

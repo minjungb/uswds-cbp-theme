@@ -18,7 +18,7 @@
 @import 'uswds-theme-utilities';
 
 // components import needs to be last
-//@import 'uswds-theme-components';
+@import 'uswds-theme-components';
 
 // -------------------------------------
 // Import individual USWDS packages...
@@ -50,9 +50,9 @@
 // @import 'packages/usa-layout';
 // @import 'packages/usa-media-block';
 // @import 'packages/usa-megamenu';
-// @import 'packages/usa-nav-container';
-// @import 'packages/usa-nav';
-// @import 'packages/usa-navbar';
+ @import 'packages/usa-nav-container';
+ @import 'packages/usa-nav';
+ @import 'packages/usa-navbar';
 // @import 'packages/usa-search';
 // @import 'packages/usa-section';
 // @import 'packages/usa-sidenav';
