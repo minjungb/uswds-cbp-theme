@@ -45,6 +45,7 @@
 
     &:hover {
       background: rgb(255, 255, 255, 0.2);
+      color: white;
     }
   }
 
@@ -129,6 +130,7 @@
     display: block;
     text-decoration: none;
     margin: $cbp-size-2 auto auto auto;
+    color: white;
   }
 
   > .dropdown-content {
