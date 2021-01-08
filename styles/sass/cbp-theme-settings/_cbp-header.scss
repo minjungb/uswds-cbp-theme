@@ -12,7 +12,7 @@
     align-items: center;
     height: inherit;
     margin: auto $cbp-size-4;
-  
+
     i {
       margin-right: $cbp-size-1;
     }
@@ -20,12 +20,12 @@
 
   //takes out default underline that comes with
   //USWDS' usa-button--unstyled class.
-  .cbp-text-button{
+  .cbp-text-button {
     display: inline-block;
     text-decoration: none;
   }
 
-  //changes to USWDS' usa-button class 
+  //changes to USWDS' usa-button class
   .usa-button {
     background-color: #003366;
 
@@ -41,6 +41,7 @@
     font-weight: 500;
     height: $cbp-size-4;
     text-decoration: none;
+    color: white;
 
     &:hover {
       background: rgb(255, 255, 255, 0.2);
@@ -54,8 +55,6 @@
     font-style: italic;
     margin: auto $cbp-size-2 $cbp-size-1 $cbp-size-2;
   }
-
-
 }
 
 .cbp-logo {
@@ -69,7 +68,7 @@
   }
 }
 
-//dropdown styling for app directory and user profile. 
+//dropdown styling for app directory and user profile.
 //desktop resolution
 .dropdown-content {
   position: absolute;
@@ -89,7 +88,7 @@
   }
 }
 
-//This is the header name for the mobile dropdowns, 
+//This is the header name for the mobile dropdowns,
 //default is hidden at desktop/tablet resolution.
 .dropdown-header-mobile {
   display: none;
@@ -98,7 +97,8 @@
 //tablet
 @media (max-width: 768px) {
   //Removes the text in the header so that only the icons show.
-  button, a{
+  button,
+  a {
     > .cbp-header-text {
       display: none;
     }
@@ -150,7 +150,7 @@
     background: #003366;
     z-index: 1;
     padding: $cbp-size-3;
-    
+
     &.show {
       display: block;
     }
@@ -160,7 +160,6 @@
   .usa-button {
     max-width: 100px;
     text-align: right;
-    
 
     .cbp-close-icon {
       color: white;
@@ -168,7 +167,7 @@
     }
   }
 
-  //headers 
+  //headers
   .dropdown-header-mobile {
     display: flex;
   }
