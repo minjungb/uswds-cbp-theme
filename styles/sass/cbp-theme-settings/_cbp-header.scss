@@ -128,15 +128,9 @@ $dhs-blue: #003366;
   
 }
 
-//tablet
-@media (max-width: 55em) {
-  ul {
-    margin-left: $cbp-size-3;
-  }
-  .cbp-header-subitem {
-    justify-content: left;
-  }
-  //Removes the text in the header so that only the icons show.
+@media (max-width: 1024px){
+    //Removes the text in the header so that only the icons show.
+
   button,
   a {
     > .cbp-header-text {
@@ -144,17 +138,16 @@ $dhs-blue: #003366;
     }
   }
 
-  //Changes full logo to meatball logo & CBP text.
-  .cbp-logo {
-    display: none;
 
-    &-mobile {
-      display: flex;
-    }
-    &-text {
-      margin: auto;
-      padding-left: $cbp-size-2;
-    }
+}
+
+//tablet
+@media (max-width: 54em) {
+  ul {
+    margin-left: $cbp-size-3;
+  }
+  .cbp-header-subitem {
+    justify-content: left;
   }
 
   .icons-mobile {
@@ -215,5 +208,20 @@ $dhs-blue: #003366;
   //headers
   .dropdown-header-mobile {
     display: flex;
+  }
+}
+
+@media (max-width: 640px){
+  //Changes full logo to meatball logo & CBP text.
+  .cbp-logo {
+    display: none;
+
+    &-mobile {
+      display: flex;
+    }
+    &-text {
+      margin: auto;
+      padding-left: $cbp-size-2;
+    }
   }
 }
