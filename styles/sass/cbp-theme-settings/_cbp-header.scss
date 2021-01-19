@@ -1,4 +1,3 @@
-
 $dhs-blue: #003366;
 
 .cbp-header {
@@ -11,15 +10,15 @@ $dhs-blue: #003366;
     font-weight: 700;
   }
 
+  i {
+    margin-right: $cbp-size-1;
+    color: #ffffff;
+  }
+
   .cbp-container {
     align-items: center;
     height: inherit;
     margin: auto $cbp-size-4;
-
-    i {
-      margin-right: $cbp-size-1;
-      color: #ffffff;
-    }
   }
 
   //default button element has usa-button properties
@@ -55,12 +54,12 @@ $dhs-blue: #003366;
     height: inherit;
     justify-content: left;
     color: #ffffff;
-   
+
     > a {
-     color: inherit;
-     display: inherit;
-     text-decoration: none;
-     width: inherit; 
+      color: inherit;
+      display: inherit;
+      text-decoration: none;
+      width: inherit;
 
       &:hover {
         background: rgb(255, 255, 255, 0.2);
@@ -68,7 +67,7 @@ $dhs-blue: #003366;
       }
 
       > span {
-        display: inherit; 
+        display: inherit;
         padding: $cbp-size-1 $cbp-size-2;
       }
     }
@@ -127,15 +126,14 @@ li {
 .dropdown-header-mobile {
   display: none;
 
-  .usa-button{
+  .usa-button {
     &:hover {
       background: transparent;
     }
   }
-  
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   //Removes the text in the header so that only the icons show.
   button,
   a {
@@ -153,7 +151,7 @@ li {
     max-width: 100vw;
     padding: $cbp-size-4;
     position: fixed;
-    top: 0; 
+    top: 0;
     width: 100vw;
     z-index: 1;
 
@@ -176,13 +174,13 @@ li {
   //headers
   .dropdown-header-mobile {
     display: flex;
-    & h2{
+    & h2 {
       @include cbp-text-heading-lg;
       color: #ffffff;
     }
   }
 
-  .cbp-dropdown-item{
+  .cbp-dropdown-item {
     &:hover {
       background: transparent;
     }
@@ -217,7 +215,7 @@ li {
     margin: 0;
   }
 
-  .cbp-dropdown-item{
+  .cbp-dropdown-item {
     &:hover {
       background: transparent;
     }
@@ -232,7 +230,7 @@ li {
     max-width: 100vw;
     padding: $cbp-size-4;
     position: fixed;
-    top: 0; 
+    top: 0;
     width: 100vw;
     z-index: 1;
 
@@ -255,7 +253,7 @@ li {
   //headers
   .dropdown-header-mobile {
     display: flex;
-    & h2{
+    & h2 {
       @include cbp-text-heading-lg;
       color: #ffffff;
     }
@@ -263,7 +261,7 @@ li {
 }
 
 //tablet view (USWDS)
-@media (max-width: 640px){
+@media (max-width: 640px) {
   //Changes full logo to meatball logo & CBP text.
   .cbp-logo {
     display: none;
