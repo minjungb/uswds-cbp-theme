@@ -93,6 +93,10 @@ $dhs-blue: #003366;
   }
 }
 
+.app-directory-btn {
+  width: 170px !important;
+}
+
 //dropdown styling for app directory and user profile.
 //desktop resolution
 .dropdown-content {
@@ -261,7 +265,7 @@ li {
 }
 
 //tablet view (USWDS)
-@media (max-width: 640px) {
+@media (max-width: 599px) {
   //Changes full logo to meatball logo & CBP text.
   .cbp-logo {
     display: none;
