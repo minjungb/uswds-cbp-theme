@@ -1,6 +1,6 @@
 #cbp-grid-demo {
   &.cbp-grid-container {
-    //changed from 100vh to inherit to fill height of universal header 
+    //changed from 100vh to inherit to fill height of universal header
     //and align vertically with flex.
     height: inherit;
   }
@@ -17,24 +17,31 @@
     text-align: center;
   }
 
-  // @include cbp-small-grid {
-  //   span::after { content: ".cbp-grid-col-4-sm"; }
+  @include cbp-small-grid {
+    span::after {
+      content: '.cbp-grid-col-4-sm';
+    }
 
-  //   // .cbp-row > div { margin-bottom: 1rem !important; }
-  // }
+    // .cbp-row > div { margin-bottom: 1rem !important; }
+  }
 
-  // @include cbp-medium-grid {
-  //   span::after { content: ".cbp-grid-col-4-md"; }
+  @include cbp-medium-grid {
+    span::after {
+      content: '.cbp-grid-col-4-md';
+    }
 
-  //   // .cbp-row > div { margin-bottom: 1rem !important; }
-  // }
+    // .cbp-row > div { margin-bottom: 1rem !important; }
+  }
 
-  // @include cbp-large-grid { 
-  //   span::after { content: ".cbp-grid-col-3-lg"; }
-  // }
+  @include cbp-large-grid {
+    span::after {
+      content: '.cbp-grid-col-3-lg';
+    }
+  }
 
-  // @include cbp-extra-large-grid { 
-  //   span::after { content: ".cbp-grid-col-3-lg"; }
-  // }
-
+  @include cbp-extra-large-grid {
+    span::after {
+      content: '.cbp-grid-col-3-lg';
+    }
+  }
 }
